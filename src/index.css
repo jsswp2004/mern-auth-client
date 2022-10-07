@@ -3,7 +3,8 @@
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
 body {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: auto;
+  /* 400px; */
 }
 
 .auth-form {
