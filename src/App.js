@@ -7,6 +7,8 @@ import Register from './components/Register'
 import Welcome from './components/Welcome'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import RecordList from './components/Recordlist'
+
 
 function App() {
   const [currentTab, setCurrentTab] = useState('login')
@@ -66,11 +68,7 @@ function App() {
       </Card>
       <Footer />
     </div>
-  ) : userContext.token ? (
-    <Welcome />
-  ) : (
-    <Loader />
-  )
+  ) : userContext.token ? (<RecordList />) : (<Loader />)
 }
 
 export default App
